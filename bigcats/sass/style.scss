@@ -1,0 +1,215 @@
+/*
+Theme Name: BigCats	
+Description: Theme for the Big Cats Catering
+Author: Reach Maine
+Template: bistro	
+Version: 1.0
+*/
+ 
+// parent stuff 
+//@import url("../Bistro-Responsive_Foodie_App-Theme/style.css");
+//@import url("../Bistro-Responsive_Foodie_App-Theme/public/styles/site.css");
+
+@import "partials/settings";
+@import "partials/print"; 
+ 
+/* =Theme customization starts here */
+
+.logopart {
+	background-color: $headerbkg;
+	.logoside img.tllogo {
+		padding: 0px;
+	}
+	.logocenter {
+		margin-top: 50px; // leave space for Top message.
+		.bigcats-site-preamble {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			color: $font-bright;
+			text-shadow: 2px 2px #2F1313;
+			font-size: 28px;
+		}
+		.bigcats-site-title {
+			font-family: 'Bowlby One', Helvetica, cursive;
+			font-size: 60px;
+			color: #FFD400;
+			text-shadow: 2px 3px 5px #2F1313;
+			margin-bottom: 0px;
+			margin-top: 5px;
+		}
+		.bigcats-tagline {
+			margin-bottom: 0px;
+			color: white;
+			text-shadow: 2px 2px  #2F1313;
+			font-weight: bold;
+		}
+		.bigcats-tagline, .bigcats-site-preamble {
+			font-family: 'Chivo', Helvetica, Arial, sans-serif;
+		}
+	}
+	p a { // link in top message
+		color: $topmsg-color!important;
+		font-size: large;
+	}
+}
+.welcomeimg { // welcome page widget on home page
+	.wp-caption {
+		border: 1px solid #ddd;
+		max-width: 98%!important;
+		width: auto;
+		margin-bottom: 0px;
+		img.wp-post-image {
+			border: 0px;
+			margin-bottom: 0px;
+		}
+		p.wp-caption-text {
+
+		}
+	}
+
+}
+
+// home page stuff
+ul.mainwidget li {
+	ul.bigcats-features {
+		margin-left: 0px;
+		li {
+			padding-bottom: 20px;
+			span.main {
+			    text-indent: 0px;
+			    font-size: 17px;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			    text-align: center;
+			    display: block;
+			    color: $linkcolor;
+			}	
+			span.sub {
+			    display: block;
+			    padding-bottom: 0px;
+			    color: #878787;
+			    font-weight: normal;
+			    font-size: 14px;
+			    text-align: center;
+			}
+		}
+	}
+}
+/* ------------- content styling ----------- */
+#huge_it_google_map1_container,
+#huge_it_google_map2_container,
+#huge_it_google_map3_container {
+	height: 420px;
+}
+
+//***** menu shortcode ****
+ul.cro_masthead li.mastheadli .cro_foodprice { // appetisers
+	width: initial!important;
+}
+
+ul.cro_mainstay li.mainstayli p.mainstayp { // menu style mainstay
+	padding-left: 30px;
+	//padding-right: 0px;
+}
+
+ul.cro_twister {
+	li.twistercontent { // menu style twister = 3
+		width: 80%;
+		h5 {
+			text-align: center;
+		}
+	}
+	li.twisterdivider:last {
+		display: none;
+	}
+}
+
+/* ------ widgets & sidebar stuff -------- */
+ul.mainwidget li.bigcats-widget-nopadding {
+	padding: 0px;
+}
+
+// bottom widget area - cop'd from mainwidget styling as base.
+ul.bottomwidget{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	li {
+		margin-bottom: 30px;
+		padding: 30px;
+		background: #fff;
+		border: 1px solid #e1e3e3;
+		-webkit-border-radius: 5px;
+		border-radius: 5px; 
+		color: #878787;
+		font-size: 14px !important;
+		line-height: 18px;
+		h3.widget-title{
+			margin: 0;
+			color: #545454;
+			text-align: center;
+			font-size: 18px;
+			background: url(images/bline.png) no-repeat center bottom;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+		ul li {
+			padding: 0;
+			margin: 0;
+			background: transparent;
+			border: 0px solid #fff;
+			-webkit-border-radius: 0px;
+			border-radius: 0px; 
+			list-style-type: none;
+		}
+	}
+}
+// testimonials
+.easy_t_single_testimonial {
+	p.easy_testimonial_title {
+		font-size: 18px;
+		color: #545454;
+		font-family: Rock Salt, cursive;
+    	font-weight: normal !important;
+    	margin-bottom: 15px;
+	}
+	.easy_testimonial_title:after {
+		content: '\201c';
+		float: left;
+		font-size: 60px;
+		color: $accent-color;
+		font-family: initial;
+		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		margin-left: -20px;
+	}
+	.testimonial_body:before {
+	}
+	.testimonial_body {
+		p {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+	}
+	.testimonial_body:after {
+		content: '\201d';
+		float: right;
+		font-size: 60px;
+		color: $accent-color;
+		font-family: initial;
+		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	}
+	
+
+	p.testimonial_author {}
+	p.testimonial_author:before{
+		
+	}
+}
+
+//Remove padding in gallery sidebar widget
+.bcc_sidebar_gallery {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
+@import "partials/media"; // needs to be last in this file.

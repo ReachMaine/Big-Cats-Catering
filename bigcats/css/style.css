@@ -1,0 +1,193 @@
+/*
+Theme Name: BigCats	
+Description: Theme for the Big Cats Catering
+Author: Reach Maine
+Template: bistro	
+Version: 1.0
+*/
+/* Colors ---------------------------------------------- */
+/* $linkcolor: #cf4d58;
+
+$titleFontColor: #a62425;
+$masthead-background: #5C7253;
+$title-color: #5C7253;
+$logo-font-color: white;
+$tagline-color: #EDD7AE;
+$alt-text-color: #EDD7AE; */
+/* Typography ------------------------------------------ */
+/* standard stuff */
+ul, ol, dl {
+  list-style: inside; }
+  ul li, ol li, dl li {
+    font-size: initial; }
+
+p,
+.singlepage p,
+.post.welcomepost p {
+  font-size: initial;
+  line-height: 1.6; }
+
+.wp-caption.alignleft {
+  margin-bottom: 0px; }
+  .wp-caption.alignleft img {
+    margin-bottom: 0px; }
+  .wp-caption.alignleft p.wp-caption-text {
+    font-size: small;
+    color: #545454;
+    margin-bottom: 0px;
+    text-align: center; }
+
+/* -------------- Reach --------------------------- */
+.footscribe #site-generator .reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+.footscribe #site-generator .reach-logo {
+  color: white; }
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* =Theme customization starts here */
+.logopart {
+  background-color: #732f2f; }
+  .logopart .logoside img.tllogo {
+    padding: 0px; }
+  .logopart .logocenter {
+    margin-top: 50px; }
+    .logopart .logocenter .bigcats-site-preamble {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: #d92229;
+      text-shadow: 2px 2px #2F1313;
+      font-size: 28px; }
+    .logopart .logocenter .bigcats-site-title {
+      font-family: 'Bowlby One', Helvetica, cursive;
+      font-size: 60px;
+      color: #FFD400;
+      text-shadow: 2px 3px 5px #2F1313;
+      margin-bottom: 0px;
+      margin-top: 5px; }
+    .logopart .logocenter .bigcats-tagline {
+      margin-bottom: 0px;
+      color: white;
+      text-shadow: 2px 2px #2F1313;
+      font-weight: bold; }
+    .logopart .logocenter .bigcats-tagline, .logopart .logocenter .bigcats-site-preamble {
+      font-family: 'Chivo', Helvetica, Arial, sans-serif; }
+  .logopart p a {
+    color: #cf4d58 !important;
+    font-size: large; }
+
+.welcomeimg .wp-caption {
+  border: 1px solid #ddd;
+  max-width: 98% !important;
+  width: auto;
+  margin-bottom: 0px; }
+  .welcomeimg .wp-caption img.wp-post-image {
+    border: 0px;
+    margin-bottom: 0px; }
+
+ul.mainwidget li ul.bigcats-features {
+  margin-left: 0px; }
+  ul.mainwidget li ul.bigcats-features li {
+    padding-bottom: 20px; }
+    ul.mainwidget li ul.bigcats-features li span.main {
+      text-indent: 0px;
+      font-size: 17px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      color: #bd3741; }
+    ul.mainwidget li ul.bigcats-features li span.sub {
+      display: block;
+      padding-bottom: 0px;
+      color: #878787;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center; }
+
+/* ------------- content styling ----------- */
+#huge_it_google_map1_container,
+#huge_it_google_map2_container,
+#huge_it_google_map3_container {
+  height: 420px; }
+
+/* ------ widgets & sidebar stuff -------- */
+ul.mainwidget li.bigcats-widget-nopadding {
+  padding: 0px; }
+
+ul.bottomwidget {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px; }
+  ul.bottomwidget li {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e1e3e3;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #878787;
+    font-size: 14px !important;
+    line-height: 18px; }
+    ul.bottomwidget li h3.widget-title {
+      margin: 0;
+      color: #545454;
+      text-align: center;
+      font-size: 18px;
+      background: url(images/bline.png) no-repeat center bottom;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+    ul.bottomwidget li ul li {
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0px solid #fff;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      list-style-type: none; }
+
+.easy_t_single_testimonial p.easy_testimonial_title {
+  font-size: 18px;
+  color: #545454;
+  font-family: Rock Salt, cursive;
+  font-weight: normal !important;
+  margin-bottom: 15px; }
+.easy_t_single_testimonial .easy_testimonial_title:after {
+  content: '\201c';
+  float: left;
+  font-size: 60px;
+  color: #cf4d58;
+  font-family: initial;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  margin-left: -20px; }
+.easy_t_single_testimonial .testimonial_body p {
+  font-size: 14px;
+  margin-bottom: 15px; }
+.easy_t_single_testimonial .testimonial_body:after {
+  content: '\201d';
+  float: right;
+  font-size: 60px;
+  color: #cf4d58;
+  font-family: initial;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.bcc_sidebar_gallery {
+  padding-left: 0px !important;
+  padding-right: 0px !important; }
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+@media only screen and (max-width: 767px) {
+  .logopart .logoside img.tllogo {
+    margin-top: 0px; }
+  .logopart .logocenter {
+    margin-top: 0px;
+    text-align: center; } }
+@media only screen and (max-width: 800px) {
+  .welcomeimg {
+    max-width: 97% !important; }
+    .welcomeimg .wp-caption {
+      margin-bottom: 20px; } }

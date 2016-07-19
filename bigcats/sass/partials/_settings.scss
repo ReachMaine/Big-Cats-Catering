@@ -1,0 +1,62 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+/* $linkcolor: #cf4d58;
+
+$titleFontColor: #a62425;
+$masthead-background: #5C7253;
+$title-color: #5C7253;
+$logo-font-color: white;
+$tagline-color: #EDD7AE;
+$alt-text-color: #EDD7AE; */
+$font-bright: #D92229;
+$topmsg-color: #cf4d58;
+// Background colors: 
+$linkcolor: #BD3741; // also set in theme options.
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$accent-color: #cf4d58;
+$headerbkg: #732f2f;
+$secondary-color: #edaf3d;
+
+/* Typography ------------------------------------------ */
+
+
+/* standard stuff */
+ul, ol, dl {
+	list-style: inside;
+	li {
+		font-size: initial;
+	}
+}
+p,
+.singlepage p, 
+.post.welcomepost p { // increase size of content 
+	//font-size: 120%;
+	font-size: initial;
+	line-height: 1.6;
+}
+
+// captions
+.wp-caption.alignleft {
+	margin-bottom: 0px;
+	img {
+		margin-bottom: 0px;
+	}
+	p.wp-caption-text {
+		font-size: small;
+		color: #545454;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+}
+
+/* -------------- Reach --------------------------- */
+.footscribe #site-generator {
+	.reach-logo:before {
+		content: url('images/reach-favicon.png');
+		padding-right: 3px;
+	}
+	.reach-logo {
+			color: white;
+	}
+}

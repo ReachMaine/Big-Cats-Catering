@@ -1,0 +1,41 @@
+// product in loops
+.product-small {
+	p.name {
+		font-size: x-large;
+		//color: $product-title-color;
+	}
+	.price {
+		//color: $product-price-color;
+	}
+}
+
+// single product page
+.product-info {
+	.price.large {
+		font-size: 120%;
+	}
+	.variations {
+		max-width: 400px;
+		
+	}
+}
+.product { // tighten up product add ons ()
+	div.product-addon {
+		margin: 0px;
+		border: 0px;
+		padding-top: 0px;
+		p {
+			input.input-text {
+				max-width: 450px;
+			}
+			//input[name]=""
+		}
+		p.form-row {
+			margin-bottom: 0px;
+			//background-color: red;
+		}
+	}
+	.product-addon-date-of-birth {
+		max-width: 150px;
+	}
+}

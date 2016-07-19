@@ -1,0 +1,28 @@
+
+/* ===================================================== */
+/* Media Queries --------------------------------------- */
+/* ===================================================== */
+
+
+@media only screen and (max-width: 767px) { 
+	.logopart {
+		.logoside img.tllogo {
+			margin-top: 0px;
+		}
+		.logocenter {
+			margin-top: 0px;
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.welcomeimg {
+		max-width: 97%!important; 
+		.wp-caption {
+			margin-bottom: 20px;
+		}
+	}
+	
+	
+}
