@@ -1,18 +1,15 @@
 /*
-Theme Name: BigCats	
+Theme Name: BigCats
 Description: Theme for the Big Cats Catering
 Author: Reach Maine
-Template: bistro	
+Template: bistro
 Version: 1.0
 */
- 
-// parent stuff 
-//@import url("../Bistro-Responsive_Foodie_App-Theme/style.css");
-//@import url("../Bistro-Responsive_Foodie_App-Theme/public/styles/site.css");
+
 
 @import "partials/settings";
-@import "partials/print"; 
- 
+@import "partials/print";
+
 /* =Theme customization starts here */
 
 .logopart {
@@ -83,7 +80,7 @@ ul.mainwidget li {
 			    text-align: center;
 			    display: block;
 			    color: $linkcolor;
-			}	
+			}
 			span.sub {
 			    display: block;
 			    padding-bottom: 0px;
@@ -101,10 +98,16 @@ ul.mainwidget li {
 #huge_it_google_map3_container {
 	height: 420px;
 }
+.bigcats-menu-heading {
+  border: 2px solid #cf4d58;
+  margin-bottom: 20px; }
+  .bigcats-menu-heading h3 {
+    margin-bottom: 10px; }
 
 //***** menu shortcode ****
 ul.cro_masthead li.mastheadli .cro_foodprice { // appetisers
 	width: initial!important;
+	padding: 4px 15px !important;
 }
 
 ul.cro_mainstay li.mainstayli p.mainstayp { // menu style mainstay
@@ -140,7 +143,7 @@ ul.bottomwidget{
 		background: #fff;
 		border: 1px solid #e1e3e3;
 		-webkit-border-radius: 5px;
-		border-radius: 5px; 
+		border-radius: 5px;
 		color: #878787;
 		font-size: 14px !important;
 		line-height: 18px;
@@ -159,7 +162,7 @@ ul.bottomwidget{
 			background: transparent;
 			border: 0px solid #fff;
 			-webkit-border-radius: 0px;
-			border-radius: 0px; 
+			border-radius: 0px;
 			list-style-type: none;
 		}
 	}
@@ -198,11 +201,11 @@ ul.bottomwidget{
 		font-family: initial;
 		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	}
-	
+
 
 	p.testimonial_author {}
 	p.testimonial_author:before{
-		
+
 	}
 }
 
