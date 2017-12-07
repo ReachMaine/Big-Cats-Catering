@@ -1,8 +1,8 @@
 /*
-Theme Name: BigCats
+Theme Name: BigCats	
 Description: Theme for the Big Cats Catering
 Author: Reach Maine
-Template: bistro
+Template: bistro	
 Version: 1.0
 */
 /* Colors ---------------------------------------------- */
@@ -116,11 +116,10 @@ ul.mainwidget li ul.bigcats-features {
 .bigcats-menu-heading {
   border: 2px solid #cf4d58;
   margin-bottom: 20px; }
+  .bigcats-menu-heading h3 {
+    margin-bottom: 10px; }
 
-.bigcats-menu-heading h3 {
-  margin-bottom: 10px; }
-
-ul.cro_masthead li.mastheadli .cro_foodprice {
+ul.cro_masthead li.mastheadli span.cro_foodprice {
   width: initial !important;
   padding: 4px 15px !important; }
 
@@ -131,7 +130,9 @@ ul.cro_twister li.twistercontent {
   width: 80%; }
   ul.cro_twister li.twistercontent h5 {
     text-align: center; }
-ul.cro_twister li.twisterdivider:last {
+  ul.cro_twister li.twistercontent .cro_foodprice {
+    padding: 4px 15px; }
+ul.cro_twister li.twisterdivider:last-child {
   display: none; }
 
 /* ------ widgets & sidebar stuff -------- */
