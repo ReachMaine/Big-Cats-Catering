@@ -1,11 +1,11 @@
 <?php
-	require_once(get_stylesheet_directory().'/custom/language.php'); 
-	require_once(get_stylesheet_directory().'/custom/reach.php'); 
-	
+	require_once(get_stylesheet_directory().'/custom/language.php');
+	require_once(get_stylesheet_directory().'/custom/reach.php');
+
 	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
-	* 
+	*
 	*/
 	function ea_setup() {
 	 /* do stuff ehre. */
@@ -26,10 +26,10 @@
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
 	}
-	
-		// contact form 7 fallback for date field 
+
+		// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -47,7 +47,17 @@
 	<?php }
 	add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-
+	register_sidebar(
+		array(
+						'name' =>'Top banner',
+						'id'   => 'topbanner',
+						'description'   => 'topbanner widget',
+						'before_widget' => '<div class="%2$s ">',
+						'after_widget'  => '</div>',
+						'before_title'  => '<h6 class="widget-title ">',
+						'after_title'   => '</h6>',
+		)
+	);
 
 /*  stuff from child theme for bistro **********/
 	/* add_action( 'wp_print_styles', 'cro_deregister_styles', 100 );

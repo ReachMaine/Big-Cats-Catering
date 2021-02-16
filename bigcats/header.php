@@ -76,6 +76,10 @@ wp_head();
 			if ( has_nav_menu('topbar' ) ) {
 				wp_nav_menu( array( 'container_class' => 'topbar-header', 'theme_location' => 'topbar') );
 			}
+			if ( is_active_sidebar( 'topbanner') ) {
+				dynamic_sidebar( 'topbanner' );
+			}
+
 		?>
 		</div>
 	</div>
