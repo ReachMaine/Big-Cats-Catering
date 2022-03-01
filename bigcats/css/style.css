@@ -139,6 +139,7 @@ ul.mainwidget li.bigcats-widget-nopadding {
   padding: 0px; }
 
 ul.bottomwidget {
+  clear: both;
   list-style-type: none;
   margin: 0px;
   padding: 0px; }
